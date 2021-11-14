@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+	<style>
+		*{
+			font-family: 'Raleway', sans-serif;
+			
+		}
+		body{
+			height: 5000px;
+			margin: 0;
+			background: #000;
+		}
+		h1{
+			font-weight: 500;
+			position: fixed;
+			background: #fff;
+			display: block;
+			width: 100%;
+			color: red;
+			margin: 0;
+			padding: 5px;
+			transition: 0.5s ease-in-out;
+		}
+		.shadow{
+			box-shadow: 0 0 20px #ccc;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="myMenu">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quis deleniti consequuntur exercitat </p>
+	</h1>
+
+	<script>
+        var my_menu = document.getElementById("myMenu");
+        window.onscroll = function() {
+        	if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+				my_menu.classList.add("shadow");
+        	} 
+        	else{
+        		my_menu.classList.remove("shadow");
+			}
+
+        } 
+	</script>
+</body>
+</html>
